@@ -71,7 +71,7 @@ export const withTranslation = (Component, namespace) => (props) => {
   );
   return (
     <Component
-      porps={props}
+      props={props}
       t={t}
       changeLanguage={changeLanguage}
       currentLanguage={currentLanguage}
