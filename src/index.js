@@ -1,4 +1,5 @@
-import { I18nProvider } from "./i18n";
+import { I18nProvider } from "i18n-trivial";
+// import { I18nProvider } from "./i18n";
 import { createRoot } from "react-dom/client";
 import Language from "./Language";
 import App from "./App";

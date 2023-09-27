@@ -4,31 +4,23 @@ const I18nContext = React.createContext();
 
 export const i18n = {
   config: {},
-  cache: {},
   use(config) {
     this.config = config;
     return this;
   },
-  load() {
-    this.config.source.map((key) => {
-      const data = require(`../${this.config.sourcePath}/${key}.json`)
-      this.cache[key] = data;
-    });
-  }
 };
 
 
 export const I18nProvider = ({ children }) => {
   const {
-    cache,
-    config: { initialLanguage }
+    config: { initialLanguage, cache }
   } = i18n;
 
   const [currentLanguage, setCurrentLanguage] = useState(initialLanguage);
   const [translations, setTranslations] = useState({});
 
   useEffect(() => {
-    console.log(i18n.cache)
+    console.log(i18n.config.cache)
     if (cache[currentLanguage]) {
       setTranslations(cache[currentLanguage]);
     }

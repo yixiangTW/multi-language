@@ -1,5 +1,6 @@
 import i18n from './i18nInit'
-import { withTranslation } from "./i18n";
+import { withTranslation } from "i18n-trivial";
+// import { withTranslation } from "./i18n";
 
 function Language({ changeLanguage }) {
   const handleChange = (e) => {

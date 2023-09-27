@@ -1,4 +1,5 @@
-import { withTranslation } from "./i18n";
+import { withTranslation } from "i18n-trivial";
+// import { withTranslation } from "./i18n";
 function App({ t }) {
   return (
     <div className="App">
