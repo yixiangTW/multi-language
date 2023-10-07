@@ -15,7 +15,7 @@ function Language({ changeLanguage }) {
             <option
               key={key}
               value={key}
-              selected={key === i18n.config.initialLanguage}
+              defaultValue={i18n.config.initialLanguage}
             >
               {i18n.config.languageOptions[key]}
             </option>
