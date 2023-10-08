@@ -1,5 +1,5 @@
 import i18n from './i18nInit'
-import { withTranslation } from "i18n-trivial";
+import { withTranslation } from "i18n-trivial/lib/index.esm";
 // import { withTranslation } from "./i18n";
 
 function Language({ changeLanguage }) {
@@ -9,13 +9,12 @@ function Language({ changeLanguage }) {
 
   return (
     <div className="App">
-      <select onChange={handleChange}>
+      <select onChange={handleChange} defaultValue={i18n.config.initialLanguage}>
         {Object.keys(i18n.config.languageOptions).map((key) => {
           return (
             <option
               key={key}
               value={key}
-              defaultValue={i18n.config.initialLanguage}
             >
               {i18n.config.languageOptions[key]}
             </option>

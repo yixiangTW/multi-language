@@ -1,4 +1,4 @@
-import { withTranslation } from "i18n-trivial";
+import { withTranslation } from "i18n-trivial/lib/index.esm";
 // import { withTranslation } from "./i18n";
 function App({ t, currentLanguage }) {
   return (

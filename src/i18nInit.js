@@ -1,4 +1,4 @@
-import { i18n } from "i18n-trivial";
+import { i18n } from "i18n-trivial/lib/index.esm";
 
 // import { i18n } from "./i18n";
 
