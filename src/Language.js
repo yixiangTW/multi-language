@@ -1,5 +1,5 @@
-import i18n from './i18nInit'
-import { withTranslation } from "i18n-trivial/lib/index.esm";
+import { withTranslation, i18n } from "i18n-trivial";
+
 // import { withTranslation } from "./i18n";
 
 function Language({ changeLanguage }) {
